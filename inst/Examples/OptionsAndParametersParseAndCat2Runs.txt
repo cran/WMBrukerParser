@@ -37,36 +37,36 @@
 #              addressable by spectrumName and attributeName.
 #
 #############################################################################
-
+
 ParserParams<-list()
-
+
 # Specify laboratory where data was obtained
-
+
 ParserParams$dataSource <- "EVMS"
-
+
 # Specify if multiple runs are to be parsed, "yes" or "no"
-
+
 ParserParams$multipleRuns <- "yes" 
-
+
 # Specify whether or not to concatenate tofLists, "yes" or "no"
-
+
 ParserParams$concatLists <- "yes" 
-
+
 # Specify the indices of the runs to parse. 
 # MUST APPEAR IN DATA DIRECTORY PATH
-
+
 ParserParams$runIndices <- c(1,2)
-
+
 # Specify data directory path to the left of the index (or complete path if 
 # parsing one run)
-
+
 directory = system.file("Examples", package = "WMBrukerParser")
 ParserParams$dataDirLeft <- paste(directory,"/C3ValidationExtractSmall/RobotRun",sep="")
-
+
 # Specify data directory path to the right of the index (if there is one).
-
+
 ParserParams$dataDirRight <- "/2-100kDa"
-
+
 # Specify whether or not memory and time usage are to printed during parsing
-
+
 ParserParams$printMemoryUse <- "yes"

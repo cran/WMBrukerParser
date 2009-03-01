@@ -28,25 +28,25 @@ ParseAndSave(ParserParams)
 }
 \details{
 Data directories contain spot directories with names such as
-	 0\_A1 or 0\_B17.  The code constructs the data directory 
-	paths using ParserParams\$dataDirLeft, 
-	ParserParams\$runIdices and ParserParams\$dataDirRight. 
+	 0_A1 or 0_B17.  The code constructs the data directory 
+	paths using ParserParams$dataDirLeft, 
+	ParserParams$runIdices and ParserParams$dataDirRight. 
 	If multiple runs are to be parsed, the 
-	ParserParams\$runIdices MUST appear in the paths. The 
+	ParserParams$runIdices MUST appear in the paths. The 
 	"run branch" can occur at the level of the data directory
 	 or above.  If it occurs at the data directory level, 
-	ParserParams\$dataDirRight <- "".  If a single run is to 
-	be parsed, ParserParams\$dataDirLeft is assigned the 
-	complete data directory path, ParserParams\$runIdices <- 1
-	 and ParserParams\$dataDirRight <- "".
+	ParserParams$dataDirRight <- "".  If a single run is to 
+	be parsed, ParserParams$dataDirLeft is assigned the 
+	complete data directory path, ParserParams$runIdices <- 1
+	 and ParserParams$dataDirRight <- "".
 
-tofListRun\#.Rdat and tofListMetaDataRun\#.Rdat files are saved in
+tofListRun#.Rdat and tofListMetaDataRun#.Rdat files are saved in
 	 dataDirectory (the directory containing the spot 
-	subdirectories) for "Run\#". Concatenated files are saved 
+	subdirectories) for "Run#". Concatenated files are saved 
 	in the directory of the final data parsed. For instance if 
 	runs 1, 3, and 2 were selected for concatenation 
-	(ParserParams\$runIndices <- c(1,3,2)), the files 
-	tofListCat\_1\_3\_2.Rdat and tofListMetaDataCat\_1\_3\_2.Rdat 
+	(ParserParams$runIndices <- c(1,3,2)), the files 
+	tofListCat_1_3_2.Rdat and tofListMetaDataCat_1_3_2.Rdat 
 	would be found in the dataDirectory for the Run 2.
 }
 \value{

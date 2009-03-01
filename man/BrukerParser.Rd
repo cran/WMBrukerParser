@@ -16,9 +16,9 @@ BrukerParser(dataSource, dataDirectory)
 }
 \details{
 The BrukerParser routine is called by the ParseAndSave routine 
-	using ParserParams\$dataSource and the 
-	path built from ParserParams\$dataDirLeft, 
-	ParserParams\$runIndices and ParserParams\$dataDirRight.
+	using ParserParams$dataSource and the 
+	path built from ParserParams$dataDirLeft, 
+	ParserParams$runIndices and ParserParams$dataDirRight.
 
 This routine looks for the following contents in the dataDirectory:\cr
 1.  a subdirectory with \dQuote{calibration} in the name (optional)\cr
@@ -26,7 +26,7 @@ This routine looks for the following contents in the dataDirectory:\cr
 3.  a file with the extension .axe (optional)\cr
 4.  a file with the extension .isset (optional)\cr
 5.  a file named sample.xml (optional)\cr
-6.  spot subdirectories with names like 0\_A1 and 0\_L5 (required), 
+6.  spot subdirectories with names like 0_A1 and 0_L5 (required), 
 	each containing:\cr
 EITHER (for Linear TOF data):\cr
 /1/1SLin/fid  - the binary data file (required)\cr

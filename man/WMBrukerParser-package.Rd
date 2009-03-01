@@ -13,8 +13,8 @@ The package parses Bruker-Ultraflex TOF mass spectrometry data
 \tabular{ll}{
 Package: \tab WMBrukerParser\cr
 Type: \tab Package\cr
-Version: \tab 1.1\cr
-Date: \tab 2009-12-22\cr
+Version: \tab 1.2\cr
+Date: \tab 2010-03-01\cr
 License: \tab GPL(version 2 or later)\cr
 }
 The package contains two routines. The core routine, 

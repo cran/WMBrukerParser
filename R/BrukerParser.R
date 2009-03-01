@@ -108,11 +108,17 @@ tofList <- list()
 spotNamesTemp1 <- dir(pattern="0_")
 ### Restrict to directories only
 	spotNamesTemp2 <- spotNamesTemp1[which(file.info(spotNamesTemp1)$isdir)]
+
 ### Remove calibration directories (if name happens to include "0_")
 	calNames <- dir(pattern="cal")
+	if (length(calNames) > 0){
 	spotNamesTemp3 <- spotNamesTemp2[which(spotNamesTemp2!=calNames)]
 	spotNames <- spotNamesTemp3
-	rm(spotNamesTemp1,spotNamesTemp2,spotNamesTemp3)
+	rm(spotNamesTemp3,calNames)
+	}
+
+	spotNames <- spotNamesTemp2
+	rm(spotNamesTemp1,spotNamesTemp2)
 
 numberOfSpots <- length(spotNames)
 imageData <- FALSE

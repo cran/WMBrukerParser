@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<method name="ProtMix.par" date="2003-01-09T14:35:33" creator="FlexControl-1.x" version="1.0" last_modified="2008-04-04T13:53:50" flexControlVersion="3.0.158.0" InstrumentSerialNo="247420.00099" crc32="fe24bcc7">
+   <!--Mode can be LINEAR, REFLECTOR, NEUTRAL, FAST, LIFT or EXPERIMENTAL-->
+   <Mode>LINEAR</Mode>
+   <HighVoltageSupplies>
+      <!--These are all voltages of the instrument-->
+      <IonSource1>25000</IonSource1>
+      <IonSource2>23000</IonSource2>
+      <Lens>6000</Lens>
+      <Reflector>0</Reflector>
+      <Reflector2>0</Reflector2>
+      <Polarity>positive</Polarity>
+      <LinearDetector>23.831</LinearDetector>
+      <HighMassDetector>0</HighMassDetector>
+      <PieDelay>200</PieDelay>
+      <RelativeMode>0</RelativeMode>
+   </HighVoltageSupplies>
+   <Digitizer>
+      <Timebase>2</Timebase>
+      <BandWidthLimit>2</BandWidthLimit>
+      <ElectronicGainLevel>2</ElectronicGainLevel>
+   </Digitizer>
+   <Calibration type="MS">
+      <c0>2.7323089146405e+001</c0>
+      <c1>1.2805991839192e+006</c1>
+      <c2>-4.3178442745103e-002</c2>
+      <!--Mode means 1 = linear; 2 = quadratic-->
+      <Mode>1</Mode>
+      <Accuracy>1.5000000000000e+003</Accuracy>
+   <AccessoryCalibrationInformation>
+<StdDevBeforeReCalibration>2904.0499831107</StdDevBeforeReCalibration>
+<StdDevAfterReCalibration>2.952145330564293e-008</StdDevAfterReCalibration>
+</AccessoryCalibrationInformation>
+<CalibrationGUIParametersMS>
+<SelectedCalibrationStrategy>Interactive</SelectedCalibrationStrategy>
+<UserDefinedPeakAssignmentTolerance>500</UserDefinedPeakAssignmentTolerance>
+<UserDefinedPeakAssignmentToleranceStatisticalPeptide>500</UserDefinedPeakAssignmentToleranceStatisticalPeptide>
+<NearNeighbourPeakAssignmentTolerance>50</NearNeighbourPeakAssignmentTolerance>
+<SelectedMassControlListNameManual>Protein1CalibStandard</SelectedMassControlListNameManual>
+<ZoomRange>5</ZoomRange>
+<ZoomRangeUnitPercent>1</ZoomRangeUnitPercent>
+<PeakAssignmentToleranceSourceManual>ToleranceUserDefined</PeakAssignmentToleranceSourceManual>
+<CalibrationFitOrderLinear>0</CalibrationFitOrderLinear>
+<SelectedMassControlListNameSmart></SelectedMassControlListNameSmart>
+<PeakAssignmentToleranceSourceIsNearNeighbourStatisticalPeptide>0</PeakAssignmentToleranceSourceIsNearNeighbourStatisticalPeptide>
+</CalibrationGUIParametersMS>
+<HPCPolynomial></HPCPolynomial>
+<HPCValid>0</HPCValid>
+</Calibration>
+   <MassRange>
+      <MassStart>100000</MassStart>
+      <MassEnd>1200</MassEnd>
+      <Mode>1</Mode>
+   </MassRange>
+   <MatrixSuppression>
+      <Mode>2</Mode>
+      <DeflectionConstant>0.488606</DeflectionConstant>
+      <CutOffMass>1500</CutOffMass>
+      <GateStrength>1</GateStrength>
+   </MatrixSuppression>
+   <Laser>
+      <Shots>600</Shots>
+      <PowerUV>66.0</PowerUV>
+      <Frequency>100.0</Frequency>
+   <LaserNo>1</LaserNo>
+<ParmSet>5_ularge</ParmSet>
+</Laser>
+   <CID>0</CID>
+   <ProcessingParameterFile>sar_proteine</ProcessingParameterFile>
+</method>

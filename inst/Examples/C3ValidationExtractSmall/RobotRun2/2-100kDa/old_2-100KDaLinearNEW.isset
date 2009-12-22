@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Setup last_modified="2008-02-25T13:17:24" flexControlVersion="3.0.158.0" InstrumentSerialNo="247420.00099" crc32="991c75fb">
+<Digitizer>
+<SensitivityMin>200</SensitivityMin>
+<SensitivityMedium>100</SensitivityMedium>
+<SensitivityMax>50</SensitivityMax>
+<AnalogOffsetLinMin>100</AnalogOffsetLinMin>
+<AnalogOffsetLinMedium>40</AnalogOffsetLinMedium>
+<AnalogOffsetLinMax>25</AnalogOffsetLinMax>
+<AnalogOffsetRefMin>100</AnalogOffsetRefMin>
+<AnalogOffsetRefMedium>40</AnalogOffsetRefMedium>
+<AnalogOffsetRefMax>25</AnalogOffsetRefMax>
+<DigitalOffsetLin>127</DigitalOffsetLin>
+<DigitalOffsetRef>127</DigitalOffsetRef>
+<TriggerLevel>2000</TriggerLevel>
+<StartOnTrigger>0</StartOnTrigger>
+</Digitizer>
+<HighVoltageSupplies>
+<DetectorGainBaseLin>1300</DetectorGainBaseLin>
+<DetectorGainBaseRef>1400</DetectorGainBaseRef>
+</HighVoltageSupplies>
+<Laser>
+<ParmSet name="Default" PowerMin="64" PowerMax="79" FocusMin="0" FocusMax="100" Focus="5" enablemod="0"></ParmSet>
+<ParmSet name="1_minimum" PowerMin="65" PowerMax="75" FocusMin="0" FocusMax="100" Focus="98" enablemod="0"></ParmSet>
+<ParmSet name="2_small" PowerMin="67" PowerMax="77" FocusMin="0" FocusMax="100" Focus="71" enablemod="0"></ParmSet>
+<ParmSet name="3_medium" PowerMin="67" PowerMax="77" FocusMin="0" FocusMax="100" Focus="40" enablemod="0"></ParmSet>
+<ParmSet name="4_large" PowerMin="65" PowerMax="80" FocusMin="0" FocusMax="100" Focus="27" enablemod="0"></ParmSet>
+<ParmSet name="5_ularge" PowerMin="72" PowerMax="82" FocusMin="0" FocusMax="100" Focus="6" enablemod="0"></ParmSet>
+<Focus>6</Focus>
+<FocusMin>0</FocusMin>
+<FocusMax>100</FocusMax>
+<PowerMin>72</PowerMin>
+<PowerMax>82</PowerMax>
+</Laser>
+<Laser2>
+<Focus>50</Focus>
+<FocusMin>0</FocusMin>
+<FocusMax>100</FocusMax>
+<PowerMin>0</PowerMin>
+<PowerMax>100</PowerMax>
+</Laser2>
+</Setup>

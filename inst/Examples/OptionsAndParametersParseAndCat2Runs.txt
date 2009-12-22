@@ -1,0 +1,72 @@
+#############################################################################
+########### OPTIONS AND PARAMETERS FILE FOR BRUKER MS DATA PARSER ###########
+#############################################################################
+#
+#  The Bruker MS Data Parser reads binary “fid” files (up to 80,000 points per
+#  spectra), along with other associated experimental files to create a tofList
+#  and tofListMetaData which are saved as .Rdat files.
+#  
+#    EXPECTED CONTENTS OF INPUT DATA DIRECTORY:
+#      spot subdirectories with names like "0_A1" and "0_L5", each containing    
+#         EITHER (for Linear mode):   
+#	    /1/1SLin/fid  # the binary data file (required)
+#	    /1/1SLin/acqu # the acquisition information file (required)
+#	    /1/1SLin/pdata/1/proc # the processing file  (required)
+#         OR (for Reflector mode):   
+#	    /1/1SRef/fid  # the binary data file (required)
+#	    /1/1SRef/acqu # the acquisition information file (required)
+#	    /1/1SRef/pdata/1/proc # the processing file  (required)
+#      a subdirectory with “calibration” in the name (optional)
+#      a file with the extension  (optional)
+#      a file with the extension .axe (optional)
+#      a file with the extension .isset (optional)
+#      a file named “sample.xml” (optional)
+#
+#  OPTIONS:
+#
+#    Data can be parsed for a single "run" or mulitple "runs".
+#    Data from multiple runs can be concatenated.
+#    Memory and time usage can be printed during parsing
+#
+#  OUTPUT:
+#  
+#    tofList - list of time-of-flight mass spectrum 
+#              addressable by spectrumName.
+#    tofListMetaData - A data.frame containing string values 
+#              for experimental meta-data, with rows and columns 
+#              addressable by spectrumName and attributeName.
+#
+#############################################################################
+
+ParserParams<-list()
+
+# Specify laboratory where data was obtained
+
+ParserParams$dataSource <- "EVMS"
+
+# Specify if multiple runs are to be parsed, "yes" or "no"
+
+ParserParams$multipleRuns <- "yes" 
+
+# Specify whether or not to concatenate tofLists, "yes" or "no"
+
+ParserParams$concatLists <- "yes" 
+
+# Specify the indices of the runs to parse. 
+# MUST APPEAR IN DATA DIRECTORY PATH
+
+ParserParams$runIndices <- c(1,2)
+
+# Specify data directory path to the left of the index (or complete path if 
+# parsing one run)
+
+directory = system.file("Examples", package = "WMBrukerParser")
+ParserParams$dataDirLeft <- paste(directory,"/C3ValidationExtractSmall/RobotRun",sep="")
+
+# Specify data directory path to the right of the index (if there is one).
+
+ParserParams$dataDirRight <- "/2-100kDa"
+
+# Specify whether or not memory and time usage are to printed during parsing
+
+ParserParams$printMemoryUse <- "yes"
